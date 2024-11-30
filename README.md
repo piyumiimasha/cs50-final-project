@@ -1,7 +1,5 @@
 #Expense Tracker
 
-####video URL:https://youtu.be/Oo4sGwFxPk8
-
 ####Description:
 
  USER AUTHENTICATION- Each user can register with a unique username and a secure password. During registration, usernames are validated to ensure uniqueness, preventing duplicate accounts. Passwords are securely stored using hashing, protecting user credentials from unauthorized access. Once registered, users can log in to access their personalized dashboard, where all their data is displayed privately. User sessions are maintained using secure cookies, so they can remain logged in across page visits. Users can also log out securely to prevent unauthorized access, ensuring each user's data is isolated and protected.
