@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Expense Summary</h2>
+<p>Total Expenses: ${{ total_expenses }}</p>
+{% if budget %}
+    <p>Monthly Budget: ${{ budget[0] }}</p>
+    <p>Remaining Balance: ${{ budget[0] - total_expenses }}</p>
+{% else %}
+  <p>You have not set a budget yet.</p>
+
+{% endif %}
+
+<h3>Expenses:</h3>
+<table>
+    <tr>
+        <th>Date</th>
+        <th>Category</th>
+        <th>Amount</th>
+        <th>Description</th>
+    </tr>
+    {% for expense in expenses %}
+    <tr>
+        <td>{{ expense[2]}}</td>
+        <td>{{ expense[3] }}</td>
+        <td>${{ expense[4] }}</td>
+        <td>{{ expense[5] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
